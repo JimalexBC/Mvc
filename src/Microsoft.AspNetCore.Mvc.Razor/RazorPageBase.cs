@@ -85,14 +85,18 @@ namespace Microsoft.AspNetCore.Mvc.Razor
         /// <summary>
         /// Gets or sets a <see cref="System.Diagnostics.DiagnosticSource"/> instance used to instrument the page execution.
         /// </summary>
+#pragma warning disable PUB0001 // Pubternal type in public API
         [RazorInject]
+#pragma warning restore PUB0001
         public DiagnosticSource DiagnosticSource { get; set; }
 
         /// <summary>
         /// Gets the <see cref="System.Text.Encodings.Web.HtmlEncoder"/> to use when this <see cref="RazorPage"/>
         /// handles non-<see cref="IHtmlContent"/> C# expressions.
         /// </summary>
+#pragma warning disable PUB0001 // Pubternal type in public API
         [RazorInject]
+#pragma warning restore PUB0001
         public HtmlEncoder HtmlEncoder { get; set; }
 
         /// <summary>

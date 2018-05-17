@@ -20,7 +20,9 @@ namespace Microsoft.AspNetCore.Mvc.Razor
         /// <summary>
         /// Gets or sets the dictionary for view data.
         /// </summary>
+#pragma warning disable PUB0001 // Pubternal type in public API
         [RazorInject]
+#pragma warning restore PUB0001
         public ViewDataDictionary<TModel> ViewData { get; set; }
 
     }
